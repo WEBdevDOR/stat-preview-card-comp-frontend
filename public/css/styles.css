@@ -8,9 +8,7 @@
 
 body {
   background-color: #090b1a;
-  color: #fff;
-  font-size: 15px;
-  height: 100vh;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,63 +16,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
+}
+
+.attribution {
+  font-size: 14px;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1000px;
-  height: 400px;
-  background-color: #1b1938;
-  margin: auto auto;
-  border-radius: 15px;
-}
-
-main .box {
-  width: 50%;
-  height: 100%;
-}
-
-main #hero-image {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  background: url("../../images/image-header-desktop.jpg") rgba(201, 30, 253, 0.89);
-  background-size: cover;
-  background-blend-mode: multiply;
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
-}
-
-main #hero-text {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  font-family: 'Inter', sans-serif;
-  margin-left: 50px;
-}
-
-main #hero-text h1 {
-  font-family: 'Lexend Deca', sans-serif;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  font-size: 2.5em;
-}
-
-main #hero-text h1 span {
-  color: #c91efd;
-}
-
-main #hero-text p {
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-main .stats {
+  width: 80vw;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,71 +39,189 @@ main .stats {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #1b1938;
+  border-radius: 15px;
 }
 
-main .stats div {
-  margin: 45px 60px 0 0;
+main .box {
+  width: 50%;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+main #hero-image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: url("../../images/image-header-desktop.jpg") rgba(141, 14, 219, 0.753);
+  background-blend-mode: multiply;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-.attribution a {
-  color: #3e52a3;
+main #hero-text {
+  padding: 4em 0 0em 4em;
 }
 
-@media (max-width: 600px) {
-  main {
+main #hero-text h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  padding-right: 2em;
+}
+
+main #hero-text h1 span {
+  color: #aa5cdb;
+}
+
+main #hero-text p {
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.8;
+  color: #adadad;
+  margin-top: 1em;
+}
+
+main #hero-text .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0;
+  margin-top: 4em;
+}
+
+main #hero-text .stats div {
+  margin-right: 4em;
+}
+
+main #hero-text .stats div h2 {
+  font-family: 'Inter', sans-serif;
+}
+
+main #hero-text .stats div p {
+  margin-top: unset;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: #090b1a;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    width: 80vw;
-    height: 80vh;
-    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: auto;
+        -ms-flex-pack: auto;
+            justify-content: auto;
+    height: unset;
+  }
+  main {
+    width: 90vw;
+    height: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #1b1938;
+    border-radius: 15px;
+    margin-top: 1em;
   }
   main .box {
     width: 100%;
-    height: 100%;
   }
   main #hero-image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 0;
+    background: url("../../images/image-header-desktop.jpg") rgba(141, 14, 219, 0.753);
+    background-blend-mode: multiply;
+    min-height: 40vh;
     background-size: cover;
-    background-attachment: 100%;
-    height: 100vh;
+    background-repeat: no-repeat;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0px;
   }
   main #hero-text {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin: 0 auto;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    padding: 0;
   }
   main #hero-text h1 {
-    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-right: unset;
+    margin: 1em;
+  }
+  main #hero-text h1 span {
+    color: #aa5cdb;
   }
   main #hero-text p {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8;
+    color: #adadad;
+    margin: 1.5em;
     text-align: center;
-    font-size: .8em;
-    margin-bottom: 15px;
   }
   main #hero-text .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 3em;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+    margin-top: 4em;
   }
   main #hero-text .stats div {
-    margin: 0;
+    margin-bottom: unset;
+  }
+  main #hero-text .stats div h2 {
+    font-family: 'Inter', sans-serif;
+  }
+  main #hero-text .stats div p {
+    margin-top: 0em;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1600px) {
+  main #hero-text {
+    padding-top: 4.5em;
+  }
+  main #hero-text h1 {
+    font-size: 3rem;
+    padding-bottom: 0.3em;
+    padding-right: 2.5em;
+  }
+  main #hero-text p {
+    font-size: 1.2rem;
+  }
+  main #hero-text .stats {
+    margin-top: 5em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
