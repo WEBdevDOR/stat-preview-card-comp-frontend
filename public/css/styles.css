@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lexend+Deca&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -66,6 +66,7 @@ main #hero-text {
 main #hero-text h1 {
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
+  font-weight: 600;
   padding-right: 2em;
 }
 
